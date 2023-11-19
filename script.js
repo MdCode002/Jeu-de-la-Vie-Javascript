@@ -9,8 +9,8 @@ let interval;
 let nbrgen = 0;
 
 // Initialiser la grille avec des valeurs par défaut
-const numColumns = 40;
-const numRows = 30;
+const numColumns = 35;
+const numRows = 25;
 
 // Ajouter une nouvelle colonne à la grille
 function loadMoreColumn() {
