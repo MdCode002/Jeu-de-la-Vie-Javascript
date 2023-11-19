@@ -1,38 +1,30 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 #container {
-    height: 400px;
-    overflow-y: scroll;
-    overflow-x: scroll;
-    border: 1px solid #ccc;
-    background: rgb(150, 150, 150);
+    height: fit-content;
+    width: fit-content;
+
+
+
     white-space: nowrap;
+    box-shadow: 0px 0px 29px -19px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 29px -19px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 29px -19px rgba(0, 0, 0, 0.75);
 }
 
-#content {
-    min-height: 1000px;
-}
 
 body {
-    background: #131111;
-}
+    background: #f8f6f7;
+    font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-.square {
-    width: 15px;
-    height: 15px;
-    background: yellow;
-    border: 2px solid #ccc;
-    display: inline-block;
-    overflow-x: visible;
 
 }
+
 
 .column {
-    width: 15px;
-    height: 15px;
     display: inline-block;
     flex-direction: column;
     white-space: nowrap;
@@ -43,9 +35,74 @@ body {
     width: 15px;
 
     height: 15px;
-    background: yellow;
-    border: 2px solid #ccc;
+    background: gray;
+    border: 1px solid #ccc;
     display: flex;
     white-space: nowrap;
-    overflow-x: auto;
+    /* overflow-x: auto; */
+}
+
+#PlayBtn {
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #28a745;
+}
+
+
+#setting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    width: fit-content;
+    height: 40vh;
+    padding: 30px !important;
+    /* position: absolute; */
+    justify-content: space-evenly;
+    /* left: 30px;
+    top: 50%; */
+    /* transform: translate(0, -50%); */
+    border-radius: 10px;
+    box-shadow: 0px 0px 17px -10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 17px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 17px -10px rgba(0, 0, 0, 0.75);
+    margin-bottom: 10px !important;
+
+
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 10px 15px !important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#PauseBtn {
+    background-color: #ffc107;
+}
+
+#Clear {
+    background-color: #dc3545;
+}
+
+#ModifSize {
+    background: #007bff;
+}
+
+main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Aleatoire {
+    background: rebeccapurple;
 }
