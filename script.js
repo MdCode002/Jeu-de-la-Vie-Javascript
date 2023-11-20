@@ -173,7 +173,7 @@ function startInterval() {
       nbrgen++;
       gen.innerHTML = nbrgen;
     }
-  }, 100);
+  }, 200);
 }
 
 // fonction de pause
