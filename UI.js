@@ -9,8 +9,8 @@ let PauseBtn = document.getElementById('PauseBtn');
 let Clear = document.getElementById("Clear");
 let Aleatoire = document.getElementById("Aleatoire");
 let cols;  // Ajout d'un point-virgule à la fin de la déclaration de variable
-let RowClearValue = 30;
-let ColClearValue = 40;
+let RowClearValue = 25;
+let ColClearValue = 35;
 let isPaused = true;
 
 // Affiche le nombre de lignes et de colonnes dans les paramètres
@@ -24,7 +24,7 @@ sliderCol.oninput = function() {
 }
 
 // Fonction pour effacer le terrain
-function ClearFunc() {
+function  ClearFunc(){
     cols = document.querySelectorAll('.column');
     cols.forEach(col => {
         col.remove();
@@ -43,6 +43,7 @@ function ClearFunc() {
 
 // Modifie la taille du terrain quand on clique sur le bouton
 ModifSize.addEventListener('click', () => {
+    ClearFunc();
     cellsAlive = [];
     cols = document.querySelectorAll('.column');
     cols.forEach(col => {
