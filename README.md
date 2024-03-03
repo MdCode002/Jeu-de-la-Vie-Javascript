@@ -28,5 +28,5 @@ L'algorithme du jeu de la vie de Conway est basé sur la gestion des cellules vi
 En résumé, le fonctionnement du code repose sur la gestion d'un tableau de cellules vivantes, la création dynamique du terrain, l'application des règles du jeu de la vie, et la possibilité pour l'utilisateur d'interagir avec la grille de manière intuitive.
 ## Auteur
 
-- [@Medzo02](https://github.com/Medzo02)
+- [@MdCode002](https://github.com/MdCode002)
 
